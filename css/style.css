@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #1d3a5b !important;
+}
+
+/* start navbar */
+nav {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    color: #305a94 !important;
+}
+
+.nav-item {
+    margin-right: 50px !important;
+}
+
+.nav-link:hover {
+    color: #6ca0cc !important;
+}
+
+/* end navbar */
+
+/* start home */
+.home {
+    position: relative;
+    width: 100%;
+    height: 89vh;
+    background-image: url(../imgs/pexels-pixabay-279504.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home::before {
+    content: "";
+    background-color: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home h2 {
+    position: absolute;
+    top: 50%;
+    right: 27%;
+    color: #fff;
+    font-family: 'Lobster', sans-serif;
+}
+
+/* end home */
+/* start cards */
+.content-1 .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #1d3a5b !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.card-body h6 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+.card-body h6::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 60px;
+    height: 3px;
+    top: 50%;
+    left: 0%;
+
+}
+
+#check-1,
+#check-2,
+#check-3 {
+    display: none;
+}
+
+.content-2,
+.content-3,
+.content-4 {
+    display: none;
+    transition: .5s linear;
+    color: #fff;
+    line-height: 1.5;
+
+}
+
+.label-1,
+.label-2,
+.label-3 {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+}
+
+#check-1:checked~.content {
+    display: block;
+}
+
+#check-1:checked~label {
+    visibility: hidden;
+}
+
+#check-1:checked~label::after {
+    content: 'show Less';
+    display: block;
+    visibility: visible;
+}
+
+#check-2:checked~.content {
+    display: block;
+}
+
+#check-2:checked~label {
+    visibility: hidden;
+}
+
+#check-2:checked~label::after {
+    content: 'show Less';
+    display: block;
+    visibility: visible;
+}
+
+#check-3:checked~.content {
+    display: block;
+}
+
+#check-3:checked~label {
+    visibility: hidden;
+}
+
+#check-3:checked~label::after {
+    content: 'show Less';
+    display: block;
+    visibility: visible;
+}
+
+/* end cards */
+/* start footer */
+footer {
+    margin-top: 60px;
+    color: #fff;
+}
+
+footer h5 {
+    color: #c3c3c3 !important;
+}
+
+footer ul .text-body {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* end footer */

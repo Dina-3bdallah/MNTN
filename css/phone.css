@@ -1,0 +1,24 @@
+/* start home */
+.home h2 {
+    margin: auto;
+}
+
+/* end home */
+/* start cards */
+.card {
+    width: 250px;
+    height: 150px;
+    gap: 50px;
+}
+
+.card-body h6::before {
+    width: 30px;
+}
+
+/* end cards */
+/* start footer */
+footer {
+    margin-top: 50px;
+}
+
+/* end footer */
